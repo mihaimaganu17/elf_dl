@@ -1,0 +1,11 @@
+[package]
+name = "elk"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+parse-elf = { path = "../parse-elf", version = "0.1.0"}
+region = "2.2.0"
+mmap = "0.1.1"
