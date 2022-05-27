@@ -9,3 +9,4 @@ edition = "2021"
 parse-elf = { path = "../parse-elf", version = "0.1.0"}
 region = "2.2.0"
 mmap = "0.1.1"
+thiserror = "1.0.31"
