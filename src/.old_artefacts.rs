@@ -57,3 +57,33 @@ fn main() {
         jmp(entry_point);
     }
 }
+
+/*
+    println!("Disassembling {:?}...", input_path);
+
+    let entry_point = elf.elf_header.e_entry;
+
+    let code_ph = elf
+        .ph_table
+        .iter()
+        .find(|ph| ph.mem_range().contains(&entry_point))
+        .expect("segment with entry point not found");
+
+    // Disassemble the bytes
+    let output = ndisasm(&code_ph.data, entry_point);
+    let output = String::from_utf8_lossy(&output.stdout);
+    print!("{}", output);
+
+    // Print dynamic entries
+    if let Some(dynamic_segment) = elf
+        .ph_table
+        .iter()
+        .find(|ph| ph.p_type() == SegmentType::PtDynamic)
+    {
+        if let parse_elf::SegmentContents::Dynamic(table) = &dynamic_segment.contents {
+            for entry in table.entries() {
+                println!(" -> {:?}", entry);
+            }
+        }
+    }
+*/
